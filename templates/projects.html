@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>My Projects</h1>
+<p>My Open Source projects will be published in this area.</p>
+
+<div class="project">
+    <div class="item">
+        <div class="project-info">
+            <h3>Reflex Test</h3>
+            <a href="#" title="Check Yourself" id="dialog_button" class="fa-solid fa-crosshairs"></a>
+            <a href="https://github.com/AlexFromMicrosoft/reflex-test" title="Github Repository" target="_blank" class="fab fa-github"></a>
+        </div>
+        <div>
+            <p>A simple reflex test aplication. Check yourself!</p>
+        </div>
+
+        <dialog id="dialog" class="dialog">
+            <button id="close" class="dialog_exit">X</button>
+            <div class="square">
+                <div class="square_content">
+                    <h1><i class="fas fa-bolt"></i></h1>
+                    <h3>Reaction Time Test</h3>
+                    <p>Click inside of the blue square to start</p>
+                    <p>When the red box turns green, click as quickly as you can.</p>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</div>
+
+{% endblock %}
